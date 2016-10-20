@@ -1,0 +1,182 @@
+{
+  "lids_policy": {
+    "name": "CloudTrailEvents",
+    "module": "lids",
+    "description": "Detect CloudTrail events",
+    "platform": "linux",
+    "template": false,
+    "rules": [
+      {
+        "name": "TerminateInstances",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"TerminateInstances\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "TerminateInstances",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"TerminateInstances\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "RunInstances",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"RunInstances\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeVolumeStatus",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeVolumeStatus\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeVolumes",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeVolumes\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeTags",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeTags\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeSubnets",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeSubnets\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeSnapshots",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeSnapshots\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeSecurityGroups",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeSecurityGroups\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeKeyPairs",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeKeyPairs\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeInstanceStatus",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeInstanceStatus\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeInstances",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeInstances\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeInstanceAttribute",
+        "kind": "text",
+        "search_pattern": "eventName\":\"DescribeInstanceAttribute\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeImages",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeImages\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeIdFormat",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeIdFormat\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeAlarms",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeAlarms\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeAddresses",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeAddresses\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "DescribeAddresses",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"DescribeAddresses\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      },
+      {
+        "name": "CreateSecurityGroup",
+        "kind": "text",
+        "search_pattern": "\"eventName\":\"CreateSecurityGroup\"",
+        "critical": true,
+        "active": true,
+        "alert": true,
+        "file_path": "/usr/local/cloud_trail_collector/logs/cloud_trail.log"
+      }
+    ]
+  }
+}
